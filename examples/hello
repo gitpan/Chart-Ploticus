@@ -1,0 +1,20 @@
+#!/usr/bin/perl -w
+
+# Trivial example - taken from the ploticus api webpage.
+# More to follow
+
+use strict;
+use Chart::Ploticus;
+
+sub main {
+
+	ploticus_init("png","hello.png");
+	ploticus_arg("-scale","0.8");
+	ploticus_begin();
+	ploticus_execline("#proc annotate");
+	ploticus_execline("location: 2 2");
+	ploticus_execline(" text: Hello World");
+	ploticus_end();
+}
+
+main();

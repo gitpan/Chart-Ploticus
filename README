@@ -1,0 +1,2 @@
+
+* You MUST change the LIBS line in Makefile.PL to match what you compiled ploticus with.
